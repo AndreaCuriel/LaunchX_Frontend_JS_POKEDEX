@@ -211,7 +211,7 @@ const pokeId = (id) => {
 const pokeAbilities = (abilities) => {
   const tpokeDataAbilities = document.getElementById("t_abilities");
   const pokeDataAbilities = document.getElementById("p-abilities");
-  pokeDataAbilities.innerHTML = `${abilities.length}%`;
+  pokeDataAbilities.innerHTML = abilities.length;
   tpokeDataAbilities.innerHTML = "Abilities";
 };
 
@@ -230,7 +230,7 @@ const data_Abilities = (abilities) => {
 const pokeMoves = (moves) => {
   const tpokeDMoves = document.getElementById("t_moves");
   const pokeDataMoves = document.getElementById("p-moves");
-  pokeDataMoves.innerHTML = `${moves.length}%`;
+  pokeDataMoves.innerHTML = moves.length;
   tpokeDMoves.innerHTML = "Moves";
 };
 
