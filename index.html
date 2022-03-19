@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div></div>
+            <div class="div-header" id="div1-header">
+                <div class="circulo" id="azul"></div>
+                <div class="circulo circulo-chico" id="rojo"></div>
+                <div class="circulo circulo-chico" id="amarillo"></div>
+                <div class="circulo circulo-chico" id="verde"></div>
+            </div>
+            <div class="div-header"  id="div2-header"></div>
+            <div class="div-header"  id="div3-header"><h1>POKEDEX</h1></div>
+        </header>
+
+        <section>
+            
+            <img src="./avanzar.png" alt="" id="b-decrementar">
+            <img src="./avanzar.png" alt="" id="b-incrementar">
+            
+        </section>
+    
+        <section id="container_imagenes">
+        </section>
+       
+        
+    
+        <section id="container-busqueda">
+            <input type="text" id="pokeName" placeholder="Nombre o Id">
+            <div id="b-search"></div>
+            
+        </section>
+    
+        <section id="card">
+
+            
+            
+            <div id="container_front">
+    
+               
+                    
+                <h2 class="info_center" id="p-name"></h2>
+                
+                <div class="info_center imagen_center"><img  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="imagen-pokemon" id="pokeImg"></div>
+                
+                <p class="info_center" id="p-id"></p>
+                
+                
+                <div class="tabla">
+                    <p id="t_abilities"></p>
+                    <p class="right" id="p-abilities"></p>
+                </div>
+                <div class="tabla">
+                    <p id="t_moves"></p>
+                    <p class="right" id="p-moves"></p>
+                </div>
+                <div class="tabla">
+                    <p id="container_statsName"></p>
+                    <p  class="right" id="container_stats"></p>
+                </div>
+                
+            </div>
+    
+            <div id="container_back">
+                <div class="info_center imagen_center"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="imagen-pokemon" id="pokeImgB"></div>
+                <h2 class="info_center" id="t_DAbilities"></h2>
+                <div class="left_text" id="container_abilitiesData"></div>
+                <h2 class="info_center" id="t_DMoves" ></h2>
+                <div class="left_text" id="container_movesData"></div>
+    
+    
+    
+            </div >
+
+     
+        </section>
+     
+   
+    </div>
+    
+</body>
+
+
+<footer>
+    <script src="./index.js" ></script>
+</footer>
+</html>
