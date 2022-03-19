@@ -13,7 +13,7 @@
   background-color: red;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 110vh;
 }
 
 header {
@@ -98,6 +98,9 @@ header {
 }
 
 #container_imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 1%;
   margin-bottom: 1%;
   background-color: rgb(63, 192, 231);
@@ -217,9 +220,15 @@ p {
     height: 100px;
     align-items: center;
     font-size: 10px;
+    padding-top: 7%;
+  }
+
+  #container {
+    height: 140vh;
   }
 
   #container_imagenes {
+    width: 65%;
     height: 200px;
   }
   #container-busqueda {
@@ -238,8 +247,20 @@ p {
   }
 }
 
-@media only screen and (max-width: 326px) {
+@media only screen and (max-width: 450px) {
+  #container {
+    height: 180vh;
+  }
   #container_imagenes {
     height: 300px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #container {
+    height: 190vh;
+  }
+  #container_imagenes {
+    height: 600px;
   }
 }
