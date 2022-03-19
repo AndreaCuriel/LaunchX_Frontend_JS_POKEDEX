@@ -230,7 +230,7 @@ const data_Abilities = (abilities) => {
 const pokeMoves = (moves) => {
   const tpokeDMoves = document.getElementById("t_moves");
   const pokeDataMoves = document.getElementById("p-moves");
-  pokeDataMoves.innerHTML = moves.length};
+  pokeDataMoves.innerHTML = moves.length;
   tpokeDMoves.innerHTML = "Moves";
 };
 
